@@ -22,7 +22,7 @@ def get_device_status(sim_id: str, token: str):
     # 表单参数（POST body）
     data = {
         # 863343061584686 867552065400956
-        "simId": "863343061584686",
+        "simId": "863343061584686", #设备编号
         "mapType": "2",
         "chargeTypeTag": "0",
         "appEntrance": "2",
@@ -75,7 +75,7 @@ def run_monitor(sim_id, token, interval=300):
 fake_id = []
 
 if __name__ == "__main__":
-    # 替换为你的 simId 和最新 token
+    # 无用变量
     SIM_ID = "867552065400956"
     TOKEN = "eyJhbGciOiJSUzI1NiIsImtpZCI6ImJmYm..."
 

@@ -3,11 +3,11 @@ from email.mime.text import MIMEText
 from email.header import Header
 
 # 邮箱配置
-smtp_server = "smtp.163.com"       # QQ 邮箱 SMTP
+smtp_server = "smtp.163.com"       # 163 邮箱 SMTP
 smtp_port = 465
-from_addr = "cs_songyuhang@163.com"
-password = "TJvudRXXjJS48MDA"            # 不是邮箱密码，是授权码
-to_addr = "cs_songyuhang@163.com"
+from_addr = "youremail@email.com"
+password = "授权码"            # 不是邮箱密码，是授权码
+to_addr = "youremail@email.com"
 
 def send_email(subject, content):
     msg = MIMEText(content, "plain", "utf-8")
